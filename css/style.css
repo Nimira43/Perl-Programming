@@ -635,9 +635,18 @@ video {
   border-radius: 0.25rem;
 }
 
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
 .bg-\[\#111\] {
   --tw-bg-opacity: 1;
   background-color: rgb(17 17 17 / var(--tw-bg-opacity));
+}
+
+.bg-greyDark {
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 0% 6% / var(--tw-bg-opacity));
 }
 
 .p-6 {
@@ -652,6 +661,15 @@ video {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.font-cursive {
+  font-family: Caveat, cursive;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-bold {
@@ -673,9 +691,28 @@ video {
   color: hsl(16 100% 50% / var(--tw-text-opacity));
 }
 
+.text-greyMedium {
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 20% / var(--tw-text-opacity));
+}
+
+.text-greyDark {
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 6% / var(--tw-text-opacity));
+}
+
 .hover\:text-orange:hover {
   --tw-text-opacity: 1;
   color: hsl(16 100% 50% / var(--tw-text-opacity));
+}
+
+.hover\:text-orangeLight:hover {
+  --tw-text-opacity: 1;
+  color: hsl(39 100% 50% / var(--tw-text-opacity));
+}
+
+.hover\:opacity-70:hover {
+  opacity: 0.7;
 }
 
 @media (min-width: 1024px) {
