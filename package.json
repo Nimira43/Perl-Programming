@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tailwindcss -i ./input.css -o ./css/style.css",
+    "watch": "tailwindcss -i ./input.css -o ./css/style.css --watch"
   },
   "author": "Nick Rabone",
   "license": "MIT",
   "dependencies": {
     "react-icons": "^5.2.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
   }
 }
