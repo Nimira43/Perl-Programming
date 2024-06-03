@@ -1,0 +1,14 @@
+{
+  "name": "hazard-hols",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nick Rabone",
+  "license": "MIT",
+  "dependencies": {
+    "react-icons": "^5.2.1"
+  }
+}
