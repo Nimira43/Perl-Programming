@@ -81,7 +81,8 @@ print $fruits[2] . "\n";  # Orange
 print my $val1 = "Fruit 1: " . $fruits[3] . "\n";
 
 my $mult_fruits = @fruits[2..5] . "\n";
-print $mult_fruits;
+print $mult_fruits; # only getting "Peaches" because Perl is treating the slice as a scalar
+
 my $minus_one_fruit = $fruits[-1] . "\n";
 print $minus_one_fruit;
 my $mult_fruits2 = join(" | ", @fruits[2..5]) . "\n";
