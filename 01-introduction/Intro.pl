@@ -78,3 +78,9 @@ my @fruits = ("Apple", "Banana", "Orange", "Mangos", "Pears", "Peaches");
 print @fruits;
 print $fruits[0] . "\n";  # Apple
 print $fruits[2] . "\n";  # Orange
+print my $val1 = "Fruit 1: " . $fruits[3] . "\n";
+
+my $mult_fruits = @fruits[2..5] . "\n";
+print $mult_fruits;
+my $minus_one_fruit = $fruits[-1] . "\n";
+print $minus_one_fruit;
