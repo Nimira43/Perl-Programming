@@ -84,3 +84,5 @@ my $mult_fruits = @fruits[2..5] . "\n";
 print $mult_fruits;
 my $minus_one_fruit = $fruits[-1] . "\n";
 print $minus_one_fruit;
+my $mult_fruits2 = join(" | ", @fruits[2..5]) . "\n";
+print $mult_fruits2;
