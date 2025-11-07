@@ -17,5 +17,8 @@ print @new_array, "\n";
 my $val02 = $new_array[-1];
 print $val02, "\n";
 
-my $val03 = $new_array[3..5];
+my $val03 = @new_array[3..5];
 print $val03, "\n";
+
+delete $new_array[3];
+print @new_array, "\n";
