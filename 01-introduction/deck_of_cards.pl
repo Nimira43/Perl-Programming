@@ -18,4 +18,7 @@ sub new {
       push @{ $self->{ cards } }, "$value of $suit";
     }
   }
+
+  bless $self, $class;
+  return $self;
 }
