@@ -56,3 +56,12 @@ sub load_from_file {
   my @cards = split /,/, $content;
   return $class->new_from_cards(\@cards);
 }
+
+sub new_from_cards {
+  my ($class, $cards_ref) = @_;
+  my $self = {
+    cards => $cards_ref,
+  };
+  bless $self, $class;
+  return $self;
+}
