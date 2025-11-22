@@ -8,6 +8,9 @@ sub new {
   my ($class) = @_;
   my $self = {
     card => [],
-  }
+  };
+
+  my @suits = ("Spades", "Diamonds", "Hearts", "Clubs");
+  my @values = ("Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King");
 
 }
