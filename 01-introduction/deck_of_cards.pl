@@ -74,4 +74,9 @@ sub shuffle {
 
 1; # End of package
 
-1; # End of package
+# ---- main program ----
+package main;
+
+my $deck = Deck->new();
+$deck->shuffle();
+$deck->print();
