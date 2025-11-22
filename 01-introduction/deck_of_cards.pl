@@ -22,3 +22,10 @@ sub new {
   bless $self, $class;
   return $self;
 }
+
+sub print {
+  my ($self) = @_;
+  for my $i (0..$#{ $self->{cards} }) {
+    print "$i: $self->{cards}->[$i]\n";
+  }
+}
