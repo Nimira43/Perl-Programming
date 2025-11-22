@@ -65,3 +65,9 @@ sub new_from_cards {
   bless $self, $class;
   return $self;
 }
+
+sub shuffle {
+  my ($self) = @_;
+  my @shuffled = sort { rand() <=> rand() } @{ $self->{cards} };
+  $self->{cards} = \@shuffled;
+}
