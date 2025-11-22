@@ -4,4 +4,10 @@ use warnings;
 
 package Deck;
 
-sub new {}
+sub new {
+  my ($class) = @_;
+  my $self = {
+    card => [],
+  }
+
+}
