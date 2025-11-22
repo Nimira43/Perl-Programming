@@ -35,3 +35,8 @@ sub deal {
   my @hand = splice @{ $self->{cards} }, 0, $hand_size;
   return (\@hand, $self->{cards});
 }
+
+sub to_string {
+  my ($self) = @_;
+  return join(",", @{ $self->{cards} });
+}
