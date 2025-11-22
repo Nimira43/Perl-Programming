@@ -29,3 +29,9 @@ sub print {
     print "$i: $self->{cards}->[$i]\n";
   }
 }
+
+sub deal {
+  my ($self, $hand_size) = @_;
+  my @hand = splice @{ $self->{cards} }, 0, $hand_size;
+  return (\@hand, $self->{cards});
+}
