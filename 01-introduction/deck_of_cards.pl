@@ -42,8 +42,17 @@ sub to_string {
 }
 
 sub save_to_file {
-    my ($self, $filename) = @_;
-    open my $fh, ">", $filename or die "Cannot open $filename: $!";
-    print $fh $self->to_string;
-    close $fh;
+  my ($self, $filename) = @_;
+  open my $fh, ">", $filename or die "Cannot open $filename: $!";
+  print $fh $self->to_string;
+  close $fh;
+}
+
+sub load_from_file {
+  my ($class, $filename) = @_;
+  open my $fh, "<", $filename or die "Cannot open $filename: $!";
+  my $content = <$fh>;
+  close $fh;
+  my @cards = split /,/, $content;
+  return $class->new_from_cards(\@cards);
 }
