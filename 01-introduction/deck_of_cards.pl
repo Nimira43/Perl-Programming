@@ -40,3 +40,10 @@ sub to_string {
   my ($self) = @_;
   return join(",", @{ $self->{cards} });
 }
+
+sub save_to_file {
+    my ($self, $filename) = @_;
+    open my $fh, ">", $filename or die "Cannot open $filename: $!";
+    print $fh $self->to_string;
+    close $fh;
+}
