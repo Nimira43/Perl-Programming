@@ -3,3 +3,5 @@ use strict;
 use warnings;
 
 package Deck;
+
+sub new {}
