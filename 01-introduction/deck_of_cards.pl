@@ -71,3 +71,5 @@ sub shuffle {
   my @shuffled = sort { rand() <=> rand() } @{ $self->{cards} };
   $self->{cards} = \@shuffled;
 }
+
+1; # End of package
