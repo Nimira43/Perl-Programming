@@ -62,6 +62,7 @@ sub new_from_cards {
   my $self = {
     cards => $cards_ref,
   };
+  
   bless $self, $class;
   return $self;
 }
