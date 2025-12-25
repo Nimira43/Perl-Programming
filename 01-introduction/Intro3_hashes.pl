@@ -10,10 +10,9 @@ print $val01, "\n";
 my $val02 = $age{"Isla"};
 print $val02, "\n";
 
-
-
 # Arrays: Use @array for the whole thing, $array[2] for a single element.
 # Hashes: Use %hash for the whole map, $hash{"key"} for a single value.
 #Scalars: Always start with $, whether it's a number, string, or a single element pulled from an array or hash.
 
-
+my @age_array = @age{"Emma", "Harry"};
+print $age_array[1], "\n";
